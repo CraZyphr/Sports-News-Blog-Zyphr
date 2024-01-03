@@ -1,5 +1,4 @@
-# Sports-News-Blog-Apertre-24
-
+# Sports News Blog - Apertre-24
 
 Welcome to the Sports News Blog project! This repository contains the code for a sports news blog built using Next.js for the frontend and Strapi as the backend.
 
@@ -13,7 +12,7 @@ Welcome to the Sports News Blog project! This repository contains the code for a
 
 ## Introduction
 
-The Sports-News-Blog-Apertre-24 is a web application that provides the latest sports news, articles, and updates. It is designed to deliver a seamless user experience and is powered by Next.js for the frontend, which consumes data from the Strapi backend.
+The Sports News Blog - Apertre-24 is a web application providing the latest sports news, articles, and updates. It offers a seamless user experience and is powered by Next.js for the frontend, consuming data from the Strapi backend.
 
 ## Features
 
@@ -40,37 +39,50 @@ The Sports-News-Blog-Apertre-24 is a web application that provides the latest sp
 
    ```bash
    git clone https://github.com/CraZyphr/Sports-News-Blog-Apertre-24.git
+   ```
+
 2. Navigate to the project directory:
 
-```bash
-cd Sports-News-Blog-Apertre-24
-3.Install dependencies for the frontend:
+   ```bash
+   cd Sports-News-Blog-Apertre-24
+   ```
 
-```bash
-cd sports-blog-frontend
-npm install
-4.Install dependencies for the backend:
+3. Install dependencies for the frontend:
 
-```bash
-cd sports-blog-strapi
-npm install
+   ```bash
+   cd sports-blog-frontend
+   npm install
+   ```
 
+4. Install dependencies for the backend:
 
-5.Usage
+   ```bash
+   cd sports-blog-strapi
+   npm install
+   ```
+
+### Usage
+
 Start the Strapi backend:
 
 ```bash
 cd sports-blog-strapi
 npm run develop
+```
+
 Start the Next.js frontend:
 
 ```bash
 cd sports-blog-frontend
 npm run dev
+```
+
 Open your browser and visit http://localhost:3000 to view the application.
 
-Contributing
+## Contributing
+
 We welcome contributions! If you'd like to contribute to the project, please follow our contribution guidelines.
 
-License
+## License
+
 This project is licensed under the MIT License.
