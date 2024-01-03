@@ -31,7 +31,6 @@ The Sports News Blog - Apertre-24 is a web application providing the latest spor
 ### Prerequisites
 
 - Node.js and npm installed.
-- (Add any other prerequisites)
 
 ### Installation
 
