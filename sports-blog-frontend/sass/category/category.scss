@@ -1,0 +1,399 @@
+main{
+  padding-top: 1%;
+  margin-bottom: -7.5%;
+  
+}
+.main_h {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding-top: 17px;
+    background: none;
+    overflow: hidden;
+    transition: all 0.3s;
+    opacity: 0;
+    top: -100px;
+    font-family: "Montserrat", sans-serif;
+  
+    @media only screen and (max-width: 766px) {
+      padding-top: 25px;
+    }
+  }
+  
+  .open-nav {
+    max-height: 400px !important;
+  }
+  
+  .open-nav .mobile-toggle {
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+  }
+  
+  .sticky {
+    background-color: rgba(255, 255, 255, 0.93);
+    opacity: 1;
+    top: 0px;
+    border-bottom: 1px solid gainsboro;
+  }
+  
+  .logo {
+    width: 50px;
+    font-size: 25px;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    margin-top: 0;
+    line-height: 1;
+    margin-bottom: 10px;
+  
+    @media only screen and (max-width: 766px) {
+      float: none;
+    }
+  }
+  
+  nav {
+    float: right;
+    width: 60%;
+  
+    @media only screen and (max-width: 766px) {
+      width: 100%;
+    }
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden;
+    text-align: right;
+    float: right;
+  
+    @media only screen and (max-width: 766px) {
+      padding-top: 10px;
+      margin-bottom: 22px;
+      float: left;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+    line-height: 1.5;
+  
+    @media only screen and (max-width: 766px) {
+      width: 100%;
+      padding: 7px 0;
+      margin: 0;
+    }
+  }
+  
+  nav ul a {
+    color: #888888;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  .mobile-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 22px;
+    top: 0;
+    width: 30px;
+    transition: all 200ms ease-in;
+  
+    @media only screen and (max-width: 766px) {
+      display: block;
+    }
+  
+    span {
+      width: 30px;
+      height: 4px;
+      margin-bottom: 6px;
+      border-radius: 1000px;
+      background: #8f8f8f;
+      display: block;
+    }
+  }
+  
+  .row {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 2%;
+    box-sizing: border-box;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  
+    &:after,
+    &:before {
+      transition: all 0.5s;
+    }
+  
+    &:hover {
+      color: #555;
+    }
+  
+    &:after,
+    &:before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: ".";
+      color: transparent;
+      background: #aaa;
+      height: 1px;
+    }
+  
+    &:hover:after {
+      width: 100%;
+    }
+  }
+  
+  .section {
+    width: 100%;
+    height: 165vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    align-content: center;
+    place-content: center;
+    text-align: center;
+  }
+  
+  .parallax {
+    background-image: url(https://images.unsplash.com/photo-1575142322312-fbc2721c0588?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    .overlay {
+      width: 100vw;
+      height: 100vh;
+      background: rgba(200, 200, 100, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+    }
+  
+    h2 {
+      font-size: 50px;
+      font-weight: 900;
+    }
+  
+    h4 {
+      margin-top: 0;
+      font-size: 30px;
+    }
+  }
+  
+  #scrollDown {
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 15px;
+    height: 45px;
+    padding: 2px 0px;
+    bottom: 3vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  
+    #rond {
+      height: 11px;
+      width: 11px;
+      border-radius: 50%;
+      background-color: white;
+      margin: 0 auto;
+      animation: anim1 1.5s infinite;
+    }
+  
+    @keyframes anim1 {
+      0% {
+        margin-top: 0px;
+        opacity: 0;
+      }
+  
+      100% {
+        margin-top: 33px;
+        opacity: 1;
+      }
+    }
+  }
+  
+  header h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1em;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  hr {
+    margin-top: 30px;
+    border-width: 0;
+    border-top: 2px solid #222;
+    width: 80px;
+  }
+  
+  .rainbow-letters {
+    margin-bottom: 30px;
+    opacity: 0.999;
+    z-index: 5;
+  
+    button {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: 140px 5px;
+      transition: background-position 0.5s ease, padding-left 0.5s ease;
+      width: 150px;
+      height: 40px;
+      border: 4px solid #000;
+      font-size: 16px;
+      padding: 1px 7px 1px 7px;
+    }
+  
+    button:hover {
+      transition: background-position 0.5s ease, padding-left 0.5s ease;
+      background-position: 113px 5px;
+      padding-left: 0;
+    }
+  }
+  
+  ::selection {
+    background: #3734ff40;
+  }
+  
+  @media only screen and (max-width: 450px) {
+    .rainbow-letters {
+      margin-top: 60px;
+  
+      span {
+        font-size: 40px;
+      }
+    }
+  }
+  
+  .blogSection {
+    padding: 20px 0;
+    position: relative;
+  
+    .band {
+      width: 90%;
+      max-width: 1240px;
+      position: absolute;
+      top: 0;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+  
+      @media only screen and (min-width: 500px) {
+        grid-template-columns: 1fr 1fr;
+  
+        .item-1 {
+          grid-column: 1/span 1;
+        }
+      }
+  
+      @media only screen and (min-width: 850px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+  
+    /* card */
+    .card {
+      min-height: 100%;
+      height: 400px; /* Set a fixed height for all cards */
+      background: #FFFADA;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: #444;
+      position: relative;
+      top: 0;
+      transition: all 0.1s ease-in;
+  
+      &:hover {
+        top: -2px;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+      }
+  
+      article {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+  
+      .thumb {
+        height: 150px; /* Set a fixed height for all thumbnails */
+        background-size: cover;
+        background-position: center center;
+  
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+  
+      p {
+        flex: 1;
+        line-height: 1.4;
+      }
+  
+      button {
+        margin-left: 25%;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: 140px 5px;
+        transition: background-position 0.5s ease, padding-left 0.5s ease;
+        width: 150px;
+        height: 40px;
+        border: 4px solid #000;
+        font-size: 16px;
+        padding: 1px 7px 1px 7px;
+      }
+  
+      button:hover {
+        transition: background-position 0.5s ease, padding-left 0.5s ease;
+        background-position: 113px 5px;
+        padding-left: 0;
+      }
+    }
+  }
+  

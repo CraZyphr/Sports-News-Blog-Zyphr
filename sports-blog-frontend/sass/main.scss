@@ -1,0 +1,12 @@
+@import "base/mixins";
+@import "base/variable";
+@import "base/typography";
+@import "base/base";
+@import "components/header";
+@import "components/footer";
+@import "components/hero";
+@import "components/infoBlock";
+@import"category/category.scss";
+@import "contact/contact.scss";
+@import "./components/blog/highlightArticle.scss";
+@import "components/trendingnews";

@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trending_blocks",
+  "info": {
+    "singularName": "trending-block",
+    "pluralName": "trending-blocks",
+    "displayName": "TrendingBlock",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "string",
+      "regex": "^[a-z](-?[a-z])*$",
+      "required": true,
+      "unique": true
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.info {
+  background: $white;
+  display: flex;
+  flex-direction: column;
+
+  .blog-card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    box-shadow: 0 3px 7px -1px rgba(#000, .1);
+    margin-bottom: 1.6%;
+    background: #fff;
+    border-radius: 2px;
+    overflow: hidden;
+    
+
+    &:hover {
+      .photo {
+        transform: scale(1.3) rotate(3deg);
+      }
+      .details {
+        left: -100%;
+      }
+    }
+
+    .meta {
+      position: relative;
+      z-index: 0;
+      height: 200px;
+
+      .photo {
+        position: absolute;
+        overflow: hidden; /* Ensure the image doesn't overflow its container */
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+        transition: transform 0.2s;
+        max-height: 100%; /* Limit the height of the image */
+        width: 100%; /* Limit the height of the image */
+      }
+
+      .photo img.image-resize {
+        max-width: 100%; /* Make sure the image doesn't exceed its container */
+        height: auto; /* Maintain the aspect ratio of the image */
+        object-fit: contain;
+        overflow: hidden;
+      }
+    }
+
+    .details {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -100%;
+      margin: auto;
+      transition: left 0.2s;
+      background: rgba(#000, .6);
+      color: #fff;
+      padding: 10px;
+      width: 100%;
+      font-size: .9rem;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .description {
+      padding: 1rem;
+      background: #fff;
+      position: relative;
+      z-index: 1;
+
+      h1 {
+        line-height: 1;
+        margin: 0;
+        font-size: 1.7rem;
+      }
+      
+      .butt {
+        margin-left: 90%;
+        
+       
+      }
+    }
+
+    p {
+      position: relative;
+      margin: 1rem 0 0;
+
+      &:first-of-type {
+        margin-top: 1.25rem;
+
+        &:before {
+          content: "";
+          position: absolute;
+          height: 5px;
+          background: #000;
+          width: 15px;
+          top: -0.75rem;
+          border-radius: 3px;
+        }
+      }
+    }
+
+    @media (min-width: 640px) {
+      flex-direction: row;
+      width: 1222px;
+      height: 200px;
+
+      .meta {
+        flex-basis: 40%;
+        height: auto;
+      }
+
+      .description {
+        flex-basis: 60%;
+
+        &:before {
+          transform: skewX(-3deg);
+          content: "";
+          background: #fff;
+          width: 30px;
+          position: absolute;
+          left: -10px;
+          top: 0;
+          bottom: 0;
+          z-index: -1;
+        }
+
+        h1 {
+          font-size: 30px;
+        }
+        
+        p {
+          font-size: 18px;
+        }
+        
+        .read-more {
+          margin: 18px;
+        }
+      }
+    }
+  }
+}

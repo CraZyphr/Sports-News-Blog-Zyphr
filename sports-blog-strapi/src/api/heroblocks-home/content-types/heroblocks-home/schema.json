@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "heroblocks_homes",
+  "info": {
+    "singularName": "heroblocks-home",
+    "pluralName": "heroblocks-homes",
+    "displayName": "Heroblocks Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_blocks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hero-block.hero-block"
+    }
+  }
+}

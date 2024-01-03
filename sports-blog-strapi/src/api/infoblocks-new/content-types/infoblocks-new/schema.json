@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "infoblocks_news",
+  "info": {
+    "singularName": "infoblocks-new",
+    "pluralName": "infoblocks-news",
+    "displayName": "infoblocks New"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "recent_blocks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::recent-block.recent-block"
+    }
+  }
+}

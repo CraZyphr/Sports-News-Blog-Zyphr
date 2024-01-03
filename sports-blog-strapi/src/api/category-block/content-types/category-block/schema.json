@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_blocks",
+  "info": {
+    "singularName": "category-block",
+    "pluralName": "category-blocks",
+    "displayName": "categoryBlock",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "info-block-button.button"
+    }
+  }
+}

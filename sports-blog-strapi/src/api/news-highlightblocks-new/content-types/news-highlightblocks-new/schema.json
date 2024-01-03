@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "news_highlightblocks_news",
+  "info": {
+    "singularName": "news-highlightblocks-new",
+    "pluralName": "news-highlightblocks-news",
+    "displayName": "NewsHighlightblocks New"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "newshighlight_blocks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::newshighlight-block.newshighlight-block"
+    }
+  }
+}

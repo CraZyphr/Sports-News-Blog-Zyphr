@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recent_blocks",
+  "info": {
+    "singularName": "recent-block",
+    "pluralName": "recent-blocks",
+    "displayName": "RecentBlock",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

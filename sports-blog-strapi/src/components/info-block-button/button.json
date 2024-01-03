@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_info_block_button_buttons",
+  "info": {
+    "displayName": "button",
+    "icon": "arrowRight"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

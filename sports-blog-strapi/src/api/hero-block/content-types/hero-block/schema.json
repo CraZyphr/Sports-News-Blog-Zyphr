@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hero_blocks",
+  "info": {
+    "singularName": "hero-block",
+    "pluralName": "hero-blocks",
+    "displayName": "heroBlock",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "string",
+      "regex": "^[a-z](-?[a-z])*$",
+      "required": true,
+      "unique": true
+    }
+  }
+}

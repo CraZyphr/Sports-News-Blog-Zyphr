@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "trendingblocks_news",
+  "info": {
+    "singularName": "trendingblocks-new",
+    "pluralName": "trendingblocks-news",
+    "displayName": "Trendingblocks New"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "trending_blocks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::trending-block.trending-block"
+    }
+  }
+}

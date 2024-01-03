@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "highlightblocks_homes",
+  "info": {
+    "singularName": "highlightblocks-home",
+    "pluralName": "highlightblocks-homes",
+    "displayName": "Highlightblocks Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "highlight_blocks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::highlight-block.highlight-block"
+    }
+  }
+}

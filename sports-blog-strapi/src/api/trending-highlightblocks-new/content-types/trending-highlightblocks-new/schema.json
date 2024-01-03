@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "trending_highlightblocks_news",
+  "info": {
+    "singularName": "trending-highlightblocks-new",
+    "pluralName": "trending-highlightblocks-news",
+    "displayName": "TrendingHighlightblocks New"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "trendingnewshighlight_blocks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::trendingnewshighlight-block.trendingnewshighlight-block"
+    }
+  }
+}

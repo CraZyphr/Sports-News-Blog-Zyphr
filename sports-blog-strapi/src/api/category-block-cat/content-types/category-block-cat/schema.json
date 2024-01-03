@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "category_block_cats",
+  "info": {
+    "singularName": "category-block-cat",
+    "pluralName": "category-block-cats",
+    "displayName": "categoryBlock Cat"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "category_blocks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category-block.category-block"
+    }
+  }
+}
