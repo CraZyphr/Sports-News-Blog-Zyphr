@@ -76,7 +76,7 @@ cd sports-blog-frontend
 npm run dev
 ```
 
-Open your browser and visit http://localhost:3000 to view the application.
+Open your browser and visit http://localhost:3000 to view the application on your local machine.
 
 ## Contributing
 
