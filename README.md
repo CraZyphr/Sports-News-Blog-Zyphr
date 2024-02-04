@@ -1,4 +1,4 @@
-# Sports News Blog - Apertre-24
+# Sports News Blog
 
 Welcome to the Sports News Blog project! This repository contains the code for a sports news blog built using Next.js for the frontend and Strapi as the backend.
 
