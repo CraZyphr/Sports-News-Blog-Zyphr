@@ -12,7 +12,7 @@ Welcome to the Sports News Blog project! This repository contains the code for a
 
 ## Introduction
 
-The Sports News Blog - Apertre-24 is a web application providing the latest sports news, articles, and updates. It offers a seamless user experience and is powered by Next.js for the frontend, consuming data from the Strapi backend.
+The Sports News Blog - Zyphr  is a web application providing the latest sports news, articles, and updates. It offers a seamless user experience and is powered by Next.js for the frontend, consuming data from the Strapi backend.
 
 ## Features
 
