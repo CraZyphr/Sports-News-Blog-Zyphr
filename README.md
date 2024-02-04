@@ -37,13 +37,13 @@ The Sports News Blog - Apertre-24 is a web application providing the latest spor
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/CraZyphr/Sports-News-Blog-Apertre-24.git
+   git clone https://github.com/CraZyphr/Sports-News-Blog-Zyphr.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd Sports-News-Blog-Apertre-24
+   cd Sports-News-Blog-Zyphr
    ```
 
 3. Install dependencies for the frontend:
